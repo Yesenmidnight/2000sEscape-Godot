@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Escape2000s"
+run/main_scene="res://scenes/main_menu.tscn"
+config/features=PackedStringArray("4.7")
+config/icon="res://icon.svg"
+
+[autoload]
+
+ItemDB="*res://scripts/item_db.gd"
+GameState="*res://scripts/game_state.gd"
+ContainerManager="*res://scripts/container_manager.gd"
+DragController="*res://scripts/drag_controller.gd"
+OverlayUI="*res://scripts/overlay_ui.gd"
+VisualEffects="*res://scripts/visual_effects.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+
+[rendering]
+
+scaling_3d/scale=0.4
+textures/canvas_textures/default_texture_filter=0
